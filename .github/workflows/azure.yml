@@ -34,7 +34,7 @@ jobs:
         npm install
         npm run build --if-present
         npm run test --if-present
-        working-directory: node_express_app-master
+      working-directory: node_express_app-master
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with: 
